@@ -12,13 +12,13 @@ https://leetcode.com/problems/product-of-array-except-self/
 
 
 #### 풀이 1. 
-
-  a    b    c    d    
-  1    a   ab   abc    왼쪽 방향으로 곱하기
- bcd   dc   d    1     오른쪽 방향으로 곱하기
+```
+[  a    b    c    d  ]   
+   1    a   ab   abc    정방향으로 곱한 리스트
+  bcd   dc   d    1     역방향으로 곱한 리스트
  
- bcd  adc  abd  abc
-
+[ bcd  adc  abd  abc ]  두 리스트 요소를 곱한 리스트
+```
 
 ```python
 class Solution(object):
@@ -41,7 +41,7 @@ class Solution(object):
 > Runtime : 44.32%  
 Memory : 31.66%
 
-answer리스트를 생성하고 다시 뒤집는 과정이 비효율적이다
+answer리스트를 생성하고 다시 뒤집는 과정이 비효율적이다  
 for문의 순서를 변경하면 방향이 맞지 않음
 
 ---
