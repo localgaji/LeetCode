@@ -15,10 +15,10 @@ class Solution(object):
         answer, prev = [], []
 
         def dps(elements):
-
+               
             if elements == []:
                 answer.append(prev[:]) 
-                #list는 가변객체, prev가 변경되면 answer도 변경되므로 슬라이싱으로 복사
+                # prev가 변경되면 answer도 변경되므로 슬라이싱으로 복사
             
             for e in elements:
                 nexte = elements[:]
