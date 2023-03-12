@@ -19,7 +19,7 @@ class Solution(object):
         answer = True
         a = re.sub(r"[^a-z0-9]", "", s.lower())
         
-        for n in range(0,int(len(a)/2)):
+        for n in range(0, int(len(a)/2)):
             if a[n] != a[len(a)-n-1]:
                 return False
 
@@ -31,7 +31,7 @@ Memory : 16.3 MB / 12.60%
 
 ---
 
-#### 풀이 2. isalnum 함수
+#### 풀이 2. 내장함수 isalnum
 1. isalnum 함수 사용하여 문자 판별
 2. for 문으로 대문자를 소문자로 변경 
 3. 문자를 리스트에 담기
@@ -56,8 +56,6 @@ class Solution(object):
 Runtime : 39 ms / 62.24 %  
 Memory : 15.9 MB / 18.50 %
 
-정규표현식에 비해 살짝 느린 속도
-
 ---
 
 #### 풀이 3. 문자열 슬라이싱  
@@ -79,7 +77,11 @@ class Solution(object):
 Runtime : 24 ms / 95.97%  
 Memory : 16.3 MB / 12.60%
 
-문자열 슬라이싱 기능 : 파이썬 자체에서 효율적으로 구현되어있어 순회문보다 시간이 단축됨
-
 ---
 
+#### 알게된 점
+  + 헷갈리는 정규표현식 함수 : `re.sub(r"조건", "뭘로 변경할지", "뭐를 변경할지")`
+  + `str[::-1]` 슬라이싱 : 문자열을 뒤집음
+   
+#### 어려웠던 점
+  X
