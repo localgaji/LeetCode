@@ -19,7 +19,7 @@ class Solution(object):
         x, y = 0, len(s) - 1 
 
         while x < y:
-            s[x], s[y] = s[y], s[x] 
+            s[x], s[y] = s[y], s[x]  #s는 문자열이 아니라 리스트라서 가능
             x += 1
             y -= 1
         return s  
@@ -41,7 +41,11 @@ class Solution(object):
 Runtime : 149 ms / 83.5% 
 Memory : 21.1 MB / 82.49%
 
-과정을 떠올릴 필요가 없어 간단하다.
 
 ---
 
+#### 알게된 점
+  + 
+
+#### 어려웠던 점
+  + 
