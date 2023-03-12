@@ -9,7 +9,7 @@ https://leetcode.com/problems/subsets/description/
 
 ---
 
-#### 풀이 1. 
+#### 풀이 1. DFS 재귀 구조
 
 ```python
 class Solution(object):
