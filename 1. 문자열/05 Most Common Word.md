@@ -40,8 +40,6 @@ class Solution(object):
 > Runtime : 75.58%  
 Memory : 89.53%
 
-실행할 때마다 시간,공간 편차가 크게 나타남
-
 max로 values를 한번 순회한 후  
 items()으로 또 순회하여 비효율적임 
 
@@ -71,5 +69,5 @@ class Solution(object):
 > Runtime : 39.53%  
 Memory : 41.28%
 
-코드가 간단해지지만 시간, 공간 비효율적
+
 
